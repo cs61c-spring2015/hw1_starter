@@ -7,7 +7,7 @@ fi
 
 if [ -d "test" ]; then
   if [ -f "test/.BEARGIT_TEST_IGNORE_ME" ]; then
-    rm -r test
+    rm -rf test
   else
     echo "ERROR: A test directory already exists, but it was not created by make. Please manually delete or move this directory and try again."
     return
